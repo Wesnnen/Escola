@@ -98,44 +98,52 @@ header {
     }
 }
 
-/* Estilos gerais do rodapé */
+
 footer {
     background-color: #333;
     color: #fff;
-    padding: 2px;
+    padding: 0px;
     font-family: Arial, sans-serif;
+    line-height: 0px;
 }
 
 .footer-container {
+    max-width: 1200px; /* Limita a largura máxima do footer */
+    margin: 0 auto; /* Centraliza o footer horizontalmente */
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 0px; /* Adiciona espaço entre as seções */
 }
 
 .footer-section {
     flex: 1;
-    min-width: 200px;
-    margin: 10px;
+    min-width: 150px; /* Ajusta a largura mínima das seções */
+    margin: 1px 0; /* Espaçamento vertical entre as seções */
 }
 
     .footer-section h4 {
         border-bottom: 1px solid #555;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 1px;
+        margin-bottom: 1px;
+        padding: 0;
     }
 
     .footer-section ul {
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
-        .footer-section ul li {
-            margin-bottom: 2px;
-        }
+
+.footer-section ul li {
+    margin-bottom: 1px;
+    padding: 0;
+}
 
     .footer-section a {
         color: #fff;
         text-decoration: none;
+        padding: 0;
     }
 
         .footer-section a:hover {
@@ -148,18 +156,26 @@ footer {
     gap: 1px;
 }
 
-.social-icon {
-    text-decoration: none;
-    padding: 2px;
-    border-radius: 50%;
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Ajusta a largura dos ícones */
+    height: 2px; /* Ajusta a altura dos ícones */
     background-color: #555;
+    border-radius: 50%;
+    text-decoration: none;
     color: #fff;
-    text-align: center;
 }
 
-    .social-icon:hover {
+    .social-container:hover {
         background-color: #777;
     }
+
+.socialSvg {
+    width: 20px; /* Ajusta o tamanho dos ícones SVG */
+    height: 20px;
+}
 
 /* Ajustes de responsividade */
 @media (max-width: 768px) {
@@ -168,6 +184,9 @@ footer {
         align-items: flex-start;
     }
 }
+
+
+
 
 /*   icon   */
 /* From Uiverse.io by vinodjangid07 */
