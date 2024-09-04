@@ -9,7 +9,7 @@ html {
 }
 
 html {
-  position: relative;
+  
   min-height: 100%;
 }
 
@@ -19,8 +19,7 @@ body {
 }
 
 header {
-    background-color: #333;
-    padding: 10px 0;
+   
 }
 
 .navbar {
@@ -33,6 +32,7 @@ header {
 }
 
 .logo a {
+    
     color: #fff;
     text-decoration: none;
     font-size: 24px;
@@ -40,6 +40,7 @@ header {
 }
 
 .nav-links {
+    
     list-style: none;
     padding: 0;
     margin: 0;
@@ -47,26 +48,31 @@ header {
 }
 
     .nav-links li {
+        
         margin: 0 15px;
     }
 
     .nav-links a {
+        
         color: #fff;
         text-decoration: none;
         font-size: 18px;
     }
 
         .nav-links a:hover {
+           
             text-decoration: underline;
         }
 
 .hamburger-menu {
+    border-color: red;
     display: none;
     flex-direction: column;
     cursor: pointer;
 }
 
     .hamburger-menu span {
+        border-color: red;
         background-color: #fff;
         height: 3px;
         width: 25px;
@@ -98,52 +104,45 @@ header {
     }
 }
 
-
+/* Estilos gerais do rodapé */
 footer {
+    border-color: #d62976;
     background-color: #333;
     color: #fff;
-    padding: 0px;
+    padding: 2px;
     font-family: Arial, sans-serif;
-    line-height: 0px;
 }
 
 .footer-container {
-    max-width: 1200px; /* Limita a largura máxima do footer */
-    margin: 0 auto; /* Centraliza o footer horizontalmente */
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0px; /* Adiciona espaço entre as seções */
 }
 
 .footer-section {
     flex: 1;
-    min-width: 150px; /* Ajusta a largura mínima das seções */
-    margin: 1px 0; /* Espaçamento vertical entre as seções */
+    min-width: 200px;
+    margin: 10px;
 }
 
     .footer-section h4 {
         border-bottom: 1px solid #555;
-        padding-bottom: 1px;
-        margin-bottom: 1px;
-        padding: 0;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .footer-section ul {
         list-style: none;
         padding: 0;
-        margin: 0;
     }
 
-
-.footer-section ul li {
-    margin-bottom: 1px;
-    padding: 0;
-}
+        .footer-section ul li {
+            margin-bottom: 2px;
+        }
 
     .footer-section a {
         color: #fff;
         text-decoration: none;
-        padding: 0;
     }
 
         .footer-section a:hover {
@@ -156,26 +155,18 @@ footer {
     gap: 1px;
 }
 
-.social-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px; /* Ajusta a largura dos ícones */
-    height: 2px; /* Ajusta a altura dos ícones */
-    background-color: #555;
-    border-radius: 50%;
+.social-icon {
     text-decoration: none;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #555;
     color: #fff;
+    text-align: center;
 }
 
-    .social-container:hover {
+    .social-icon:hover {
         background-color: #777;
     }
-
-.socialSvg {
-    width: 20px; /* Ajusta o tamanho dos ícones SVG */
-    height: 20px;
-}
 
 /* Ajustes de responsividade */
 @media (max-width: 768px) {
@@ -184,9 +175,6 @@ footer {
         align-items: flex-start;
     }
 }
-
-
-
 
 /*   icon   */
 /* From Uiverse.io by vinodjangid07 */

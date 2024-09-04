@@ -10,23 +10,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">MeuSite</a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="Diferenciais">Diferenciais</a></li>
-                <li><a href="Contato">Contato</a></li>
-                
-            </ul>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 bg-dark" >
+            <div class="container" >
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Escola .Net </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" >
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Diferenciais">Diferenciais</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
+
 
 
     <div class="container">
