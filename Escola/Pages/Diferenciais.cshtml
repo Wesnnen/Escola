@@ -90,31 +90,24 @@
             </div>
             <div class="modal-body">
                 
-                            <div class="container mt-4">
-                                <h2>Filmes - Senac Shopping</h2>
-                                <div class="row mt-4">
-                                    @for (int i = 0; i < professor.Count; i++)
-                                    {
-                                        var y = professor[i];
-                            <div class="card" style="width: 18rem;">
+                <div class="container mt-4">
+                     <h2>Filmes - Senac Shopping</h2>
+                         <div class="row mt-4">
+                              @for (int i = 0; i < professor.Count; i++)
+                               {
+                                var y = professor[i];
+                              <div class="card" style="width: 18rem; padding:10px; margin:10px;">
                                 <img src="@y.ImagemUrl" class="img-fluid movie-image" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p><strong>Descrição:</strong> @y.Descricao</p>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p><strong>Descrição:</strong> @y.Descricao</p>
                                     
                                    
-                                </div>
-                            </div>
-                                            
-                                                
-                                                
-                                                    
-                                                    
-                                               
-                                                
+                                    </div>
+                              </div>
                                     }
-                                </div>
-                            </div>
+                         </div>
+                </div>
                         
             </div>
         
@@ -149,8 +142,6 @@
     </div>
 </div>
 
-
-
 <script>
     var myModal = document.getElementById('myModal')
     var myInput = document.getElementById('myInput')
@@ -168,6 +159,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
         width: 320px;
         border: none;
         line-height: 1.6;

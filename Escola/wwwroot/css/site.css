@@ -105,49 +105,50 @@ header {
 }
 
 /* Estilos gerais do rodapé */
-footer {
-    border-color: #d62976;
-    background-color: #333;
-    color: #fff;
-    padding: 2px;
-    font-family: Arial, sans-serif;
-}
-
-.footer-container {
+.Base-texto {
+    background-color: rgba(0, 0, 0, 0.055);
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-}
-
-    .footer-section h4 {
-        border-bottom: 1px solid #555;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+    .Base-texto ul {
+        width: auto;
+        height: auto;
+        line-height: 1.5;
+        color: #000000;
+        margin: 1.8rem;
+        margin-left: 4%;
     }
 
-    .footer-section ul {
-        list-style: none;
-        padding: 0;
+    .Base-texto h1 {
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
-        .footer-section ul li {
-            margin-bottom: 2px;
-        }
-
-    .footer-section a {
-        color: #fff;
-        text-decoration: none;
+    .Base-texto p {
+        font-size: 13px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
+    .Base-texto i {
+        display: flex;
+        font-size: 40px;
+    }
+
+    .Base-texto a {
+        color: #f7f7f7;
+        font-size: 13px;
+        display: block;
+        gap: 40px;
+        margin-top: 10%;
+    }
+  
 
 /* Estilos para redes sociais */
 .social-media {
